@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Jai Narula - Portfolio 3D Analytics 🚀
 
 A cutting-edge, interactive portfolio website by Jai Narula showcasing advanced web development skills with 3D graphics, smooth animations, and modern React architecture.
@@ -37,8 +38,8 @@ A cutting-edge, interactive portfolio website by Jai Narula showcasing advanced 
 
 ```bash
 # Clone the repository
-git clone https://github.com/jaijaijai353/Jai.Narula_Portfolio.git
-cd Jai.Narula_Portfolio
+git clone https://github.com/yourusername/portfolio-3d-analytics.git
+cd portfolio-3d-analytics
 
 # Install dependencies
 npm install
@@ -205,3 +206,7 @@ This project is licensed under the **Personal Portfolio License (PPL) v1.0**.
 ---
 
 **⭐ If this project inspired you, consider giving it a star!**
+
+=======
+# Solar-Portfolio
+>>>>>>> 6af13f4998fc9167dbf2999227b9696c44153eea
