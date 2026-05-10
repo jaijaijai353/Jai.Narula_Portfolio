@@ -15,43 +15,27 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Graduate Trainee | CRM Analytics & Revenue Operations</h4>
+                <h5>Jaro Education</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>2026</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Engineered a CRM lead analytics pipeline in LeadSquared across 3 EdTech verticals — applied data cleaning, segmented 100+ weekly leads by program fit 
+              and budget tier; diagnosed revenue conversion bottlenecks via root cause analysis to drive stakeholder-aligned outreach prioritization.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Google Student Ambassador</h4>
+                <h5>Google India</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>2025</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
-            </p>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
-              </div>
-              <h3>NOW</h3>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Ranked Top 250 nationally among 10,000+ ambassadors — grew community to 500+ members; led 10+ workshops and 3 cross-campus events (200+ 
+              participants each) driving AI & data literacy adoption.
             </p>
           </div>
         </div>

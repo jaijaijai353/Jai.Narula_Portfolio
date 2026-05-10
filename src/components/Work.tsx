@@ -17,14 +17,14 @@ const Work = () => {
       .getBoundingClientRect().left;
     const rect = box[0].getBoundingClientRect();
     const parentWidth = box[0].parentElement!.getBoundingClientRect().width;
-    let padding: number =
+    const padding: number =
       parseInt(window.getComputedStyle(box[0]).padding) / 2;
     translateX = rect.width * box.length - (rectLeft + parentWidth) + padding;
   }
 
   setTranslateX();
 
-  let timeline = gsap.timeline({
+  const timeline = gsap.timeline({
     scrollTrigger: {
       trigger: ".work-section",
       start: "top top",
@@ -53,23 +53,60 @@ const Work = () => {
           My <span>Work</span>
         </h2>
         <div className="work-flex">
-          {[...Array(6)].map((_value, index) => (
-            <div className="work-box" key={index}>
-              <div className="work-info">
-                <div className="work-title">
-                  <h3>0{index + 1}</h3>
-
-                  <div>
-                    <h4>Project Name</h4>
-                    <p>Category</p>
-                  </div>
+          <div className="work-box">
+            <div className="work-info">
+              <div className="work-title">
+                <h3>01</h3>
+                <div>
+                  <h4>NIKA — AI Analytics Platform</h4>
+                  <p>Full-Stack AI Platform</p>
                 </div>
-                <h4>Tools and features</h4>
-                <p>Javascript, TypeScript, React, Threejs</p>
               </div>
-              <WorkImage image="/images/placeholder.webp" alt="" />
+              <h4>Tools and features</h4>
+              <p>Python, Gemini AI, Flask, Pandas, React, REST API, SQLite</p>
             </div>
-          ))}
+            <WorkImage 
+              image="/images/nika.png" 
+              alt="NIKA AI Analytics Platform" 
+              link="https://github.com/jaijaijai353/NIKA--main"
+            />
+          </div>
+          <div className="work-box">
+            <div className="work-info">
+              <div className="work-title">
+                <h3>02</h3>
+                <div>
+                  <h4>Blinkit Regional Sales Dashboard</h4>
+                  <p>Business Intelligence</p>
+                </div>
+              </div>
+              <h4>Tools and features</h4>
+              <p>Power BI, DAX, Power Query, Star Schema, Excel</p>
+            </div>
+            <WorkImage 
+              image="/images/blinkit.png" 
+              alt="Blinkit Sales Dashboard" 
+              link="https://github.com/jaijaijai353/Blinkit-Sales-Dashboard"
+            />
+          </div>
+          <div className="work-box">
+            <div className="work-info">
+              <div className="work-title">
+                <h3>03</h3>
+                <div>
+                  <h4>Netflix Content EDA Pipeline</h4>
+                  <p>Data Analysis</p>
+                </div>
+              </div>
+              <h4>Tools and features</h4>
+              <p>Python, Pandas, NumPy, Matplotlib, Seaborn, scikit-learn</p>
+            </div>
+            <WorkImage 
+              image="/images/netflix.png" 
+              alt="Netflix EDA Pipeline" 
+              link="https://github.com/jaijaijai353/Netflix-EDA-Analysis"
+            />
+          </div>
         </div>
       </div>
     </div>

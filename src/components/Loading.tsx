@@ -10,11 +10,40 @@ const Loading = ({ percent }: { percent: number }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [clicked, setClicked] = useState(false);
 
+  // Preload heavy parts of the site in the background while the loading screen is visible
+  const preloadSite = async () => {
+    // Dynamically import heavy components (code‑splitting)
+    try {
+      await import('./TechStack'); // corrected path
+      await import('./Work'); // preload Work component
+      await import('./WhatIDo'); // preload WhatIDo component
+    } catch (e) {
+      // ignore if module path does not exist – this is just a best‑effort preload
+    }
+    // Preload images used later in the app
+    const images = [
+      '/images/python.png',
+      '/images/powerbi.png',
+      '/images/excel.png',
+      '/images/mysql.webp',
+      '/images/react2.webp',
+      '/images/node2.webp',
+      '/images/typescript.webp',
+      '/images/javascript.webp',
+    ];
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  };
+
   if (percent >= 100) {
     setTimeout(() => {
       setLoaded(true);
       setTimeout(() => {
         setIsLoaded(true);
+        // Start background preloading now that the loading screen is about to finish
+        preloadSite();
       }, 1000);
     }, 600);
   }
@@ -46,7 +75,7 @@ const Loading = ({ percent }: { percent: number }) => {
     <>
       <div className="loading-header">
         <a href="/#" className="loader-title" data-cursor="disable">
-          Logo
+          JN
         </a>
         <div className={`loaderGame ${clicked && "loader-out"}`}>
           <div className="loaderGame-container">
@@ -62,8 +91,9 @@ const Loading = ({ percent }: { percent: number }) => {
       <div className="loading-screen">
         <div className="loading-marquee">
           <Marquee>
-            <span> A Creative Developer</span> <span>A Creative Designer</span>
-            <span> A Creative Developer</span> <span>A Creative Designer</span>
+            <span> Data Analyst </span> <span> Business Analyst </span>
+            <span> BI Analyst </span> <span> Product Analyst </span>
+            <span> RevOps Analyst </span> <span> SQL Analyst </span>
           </Marquee>
         </div>
         <div
@@ -97,7 +127,7 @@ export const setProgress = (setLoading: (value: number) => void) => {
 
   let interval = setInterval(() => {
     if (percent <= 50) {
-      let rand = Math.round(Math.random() * 5);
+      const rand = Math.round(Math.random() * 5);
       percent = percent + rand;
       setLoading(percent);
     } else {
