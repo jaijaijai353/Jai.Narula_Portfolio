@@ -37,8 +37,8 @@ A cutting-edge, interactive portfolio website by Jai Narula showcasing advanced 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/portfolio-3d-analytics.git
-cd portfolio-3d-analytics
+git clone https://github.com/jaijaijai353/Jai.Narula_Portfolio.git
+cd Jai.Narula_Portfolio
 
 # Install dependencies
 npm install
@@ -205,4 +205,3 @@ This project is licensed under the **Personal Portfolio License (PPL) v1.0**.
 ---
 
 **⭐ If this project inspired you, consider giving it a star!**
-
