@@ -68,7 +68,7 @@ const Work = () => {
             <WorkImage 
               image="/images/nika.png" 
               alt="NIKA AI Analytics Platform" 
-              link="https://github.com/jaijaijai353/NIKA--main"
+              link="https://nika-main-master.vercel.app/"
             />
           </div>
           <div className="work-box">
